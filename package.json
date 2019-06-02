@@ -1,15 +1,15 @@
 {
   "name": "pingraph",
   "version": "1.0.0",
-  "description": "",
+  "description": "An absolutely essential tool to track pings in a beautfiul UI",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "author": "",
+  "author": "Tobi Inc.",
   "license": "ISC",
   "devDependencies": {
-    "chart.js": "^2.8.0",
     "electron": "^5.0.2"
-  }
+  },
+  "dependencies": {}
 }
