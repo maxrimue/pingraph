@@ -6,28 +6,30 @@ var ctx = document.getElementById("pings").getContext("2d");
 var myChart = new Chart(ctx, {
   type: "line",
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["1", "2", "3", "4"],
     datasets: [
       {
         label: "ping",
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: "transparent",
-        borderColor: "rgba(255, 99, 132, 1)",
-        borderWidth: 1.5
+        data: [4, 8, 2, 2]
       }
     ]
   },
   options: {
     scales: {
+      xAxes: [
+        {
+          display: false
+        }
+      ],
       yAxes: [
         {
-          ticks: {
-            beginAtZero: true
-          }
+          display: false
         }
       ]
     }
-  }
+  },
+  maintainAspectRatio: false,
+  responsive: true
 });
 
 // const pingsElement = document.querySelector("#pings");
